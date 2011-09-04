@@ -15,6 +15,19 @@ $(function(){
 	//model: UserStory
   });
   
+  window.UserStoryView = Backbone.View.extend({
+	tagName: 'li',
+	
+    initialize: function(){
+      _.bindAll(this, 'render');	
+    },
+	
+    render: function(){
+      $(this.el).html(this.model.get("card"));
+      return this;
+    }
+  });
+  
   window.ProjectView = Backbone.View.extend({
     el: $('#project-header'),
     
@@ -37,7 +50,10 @@ $(function(){
     },
     
     appendUserStory: function(model) {
-      $("#user-story-list").append("<li>" + model.get("card") + "</li>");
+      var userStoryView = new UserStoryView({
+        model: model
+      });
+      $("#user-story-list").append(userStoryView.render().el);
       //console.log('rendered in appendUserStory');
     },
     
