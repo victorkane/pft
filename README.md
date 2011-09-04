@@ -1,6 +1,6 @@
 ### Project Flow & Tracker
 
-Node based scrum stack under construction here...
+Node based scrum stack (backbone served by jade, run in the browser) under construction here...
 
 An agile project process monitor, pft booted itself into existence during nodeknockout 2011. 
 
