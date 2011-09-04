@@ -1,6 +1,6 @@
 ### Project Flow & Tracker
 
-Node based scrum stack
+Node based scrum stack under construction here...
 
 An agile project process monitor, pft was booted itself into existence during nodeknockout 2011. 
 
