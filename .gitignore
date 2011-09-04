@@ -1,0 +1,4 @@
+node_modules/
+logs/*.log
+pids/*.pid
+couchdb/bizcrud/*.txt

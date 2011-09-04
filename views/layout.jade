@@ -1,0 +1,17 @@
+!!!
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript', src='/javascripts/json2.js')
+    script(type='text/javascript', src='/javascripts/jquery-1.6.2.min.js')
+    script(type='text/javascript', src='/javascripts/underscore-min.js')
+    script(type='text/javascript', src='/javascripts/backbone-min.js')
+  #header
+    h1= 'Welcome to ' + title
+  body!= body
+  #footer
+    <iframe class="vote-ko" src="http://nodeknockout.com/iframe/los-empabirras" frameborder=0 scrolling=no allowtransparency=true width=115 height=45>
+    </iframe>
+    img#nodejs-logo(src='images/nodejs.png')
+    img#linode-logo(src='http://www.linode.com/~tom/pics/Linode/logos/linodebtnpo3.png')

@@ -1,0 +1,38 @@
+body {
+	background-color:#fff;
+  font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width:960px;
+  margin-top:10px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#project {
+	background-color:#f7f7f7;
+	padding:5px;
+}
+#header {
+	background-color:#eee;
+	padding:5px;
+}
+#footer {
+	background-color:#eee;
+	height:60px;
+	padding-top:10px;
+}
+#linode-logo {
+	float:left;
+	margin-right:20px;
+	margin-top:10px;
+}
+#nodejs-logo {
+	float:left;
+	margin-right:20px;
+}
+.vote-ko {
+	margin-top:10px;
+}
