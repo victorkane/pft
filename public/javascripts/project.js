@@ -30,7 +30,7 @@ $(function(){
     },
     
     addUserStory: function() {
-      console.log('add');
+      //console.log('add');
       var card = $('#new-user-story-card').val();	
       var aUserStory = new UserStory({card: card});
       this.userStoryList.add(aUserStory);
@@ -38,7 +38,7 @@ $(function(){
     
     appendUserStory: function(model) {
       $("#user-story-list").append("<li>" + model.get("card") + "</li>");
-      console.log('rendered in appendUserStory');
+      //console.log('rendered in appendUserStory');
     },
     
     render: function(){
