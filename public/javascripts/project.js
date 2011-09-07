@@ -8,11 +8,13 @@ $(function(){
       conversation: 'Further description, analysis and design, dev notes',
       confirmation: 'Acceptance Tests',
     	  *****/
-    }
+    },
+	url: '/userstories',
   });
   
   window.UserStoryList = Backbone.Collection.extend({
-	//model: UserStory
+	model: window.UserStory,
+	url: '/userstories',
   });
   
   window.UserStoryView = Backbone.View.extend({
@@ -46,6 +48,7 @@ $(function(){
       //console.log('add');
       var card = $('#new-user-story-card').val();	
       var aUserStory = new UserStory({card: card});
+      aUserStory.save();
       this.userStoryList.add(aUserStory);
     },
     
